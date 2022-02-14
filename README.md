@@ -33,3 +33,24 @@ This project uses Amazon ECS, Amazon EC2 ARM based instance, and Elastic Load Ba
 ![](pics/project-diagram.png)
 
 
+### Modules
+
+This project is divided into seven short modules. They are the followings:
+
+**1-** **Set up your environment**: Install and configure your test environment with the prerequisites to create the Docker image, and deploy it into Amazon ECS. 
+
+**2-** **Set up AWS Cloud9 Workspace**: Open your Cloud9 IDE to initialize your workspace and download the sample application’s source code into your environment.
+
+**3-** **Create and Publish Docker Image**: Create a Dockerfile, with instructions to build an ARM64 container image, and then publish it to Amazon ECR. 
+
+**4-** **Create an Amazon ECS Cluster**: Create an Amazon ECS cluster with ARM based instances.
+
+**5-** **Deploy the Application to Amazon ECS**: Create a task definition with Auto Scaling.
+
+**6-** **Monitoring and Logging**: Enable monitoring for ECS environment using Amazon CloudWatch Container Insights.
+
+**7-** **Clean up**: To finish this experiment, you will clean up the resources created in this lab.
+
+
+
+### Module 1: Set up Your Environment
