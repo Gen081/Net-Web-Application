@@ -27,7 +27,7 @@ AWS announced new EC2 instance types will be powered by the AWS Graviton2 proces
 
 
 
-#### Application Architecture
+### Application Architecture
 This project uses Amazon ECS, Amazon EC2 ARM based instance, and Elastic Load Balancing as pictured below:
 
 ![](pics/project-diagram.png)
@@ -54,3 +54,21 @@ This project is divided into seven short modules. They are the followings:
 
 
 ### Module 1: Set up Your Environment
+
+This module requires the configuration of an environment using [AWS CloudFormation](https://aws.amazon.com/cloudformation) template.
+
+**CloudFormation template** basically describes the desired resources and their dependencies so that developers can launch and configure them together as a stack.
+
+#### Implementation
+Instructions below will deploy an environment in AWS account. The deployed resources consists of 
+* An AWS Cloud9 IDE for your development purpose.
+* A db.t3.small Amazon Aurora with MySQL compatibility for database.
+* An AWS Secrets Manager.
+* Two NAT Gateways, and all necessary roles and security groups.
+
+The followings steps will show how set up the CloudFormation environment.
+
+Select an AWS region, 
+![](pics/aws-region.png)
+
+After the AWS region selection, which will then lead to AWS CloudFormation Service - Create Stack screen.
